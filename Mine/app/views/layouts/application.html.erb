@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mine</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">Involved In</a>
+        <div class="nav-collapse">
+      
+<input type="text" class="search-query" placeholder="Search">
+          <ul class="nav">
+            <li><%= link_to "Browse Products", products_path %></li>
+            <li><%= link_to "Price List" %></li>
+            <li><%= link_to "Contact Us" %></li>
+            <li><%= link_to "Cart" %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <hr>
+<div class="container">
+<div class="row">
+	<div class="span9"><%= yield %></div>
+	<div class="span3">
+		<h2>About Us</h2>
+		Every morning Dab your self with higher expectations,
+During peak hours release your self from failures and stress,
+Push your feet forward to generate faith for courage. -Emma M
+
+PART TIME JOB OPPORTUNITY
+We are seeking to facilitate 9 people who have good knowledge in career guidance to do a a career guidance reach out in 10 secondary schools in Butaleja District. From the 23rd to 25th JUNE 2014
+
+Qualifications
+1. You must have a Degree or Diploma in any Discipline from a recognized Institution with a minimum of one year working Experience.
+2. You must know English.
+3. Any experience in this kind of work will be an added advantage
+
+How to apply
+Write down a good 1 hour presentation on career guidance and bring them together with photocopies of your academic papers to the offices of a little bit of HOPE (Uganda), at Good News Guest House Room 12 Mbale Road. Before the 20th/06/2014.
+	</div>
+</div>
+</div>
+</body>
+</html>
